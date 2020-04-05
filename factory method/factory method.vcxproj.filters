@@ -15,43 +15,43 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CatCreator.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="CatProduct.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Creator.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="DogCreator.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="DogProduct.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Product.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="CatCreator.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="CatProduct.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Creator.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="DogCreator.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="DogProduct.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Client\CatCreator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\DogCreator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Product\CatProduct.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Product\DogProduct.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\Creator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Client\Public\CatCreator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\Public\Creator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\Public\DogCreator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Product\Public\CatProduct.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Product\Public\DogProduct.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Product\Public\Product.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -2,9 +2,9 @@
 #include "CatProduct.h"
 #include <iostream>
 
-IProduct* CatCreator::CreateProduct()
+std::unique_ptr<IProduct> CatCreator::CreateProduct()
 {
-    return new CatProduct{};
+    return std::make_unique<CatProduct>();
 }
 
 void CatCreator::CalledByPointer(IProduct* Product)

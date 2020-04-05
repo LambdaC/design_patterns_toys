@@ -19,20 +19,20 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CatCreator.h" />
-    <ClInclude Include="CatProduct.h" />
-    <ClInclude Include="Creator.h" />
-    <ClInclude Include="DogCreator.h" />
-    <ClInclude Include="DogProduct.h" />
-    <ClInclude Include="Product.h" />
+    <ClCompile Include="Client\CatCreator.cpp" />
+    <ClCompile Include="Client\Creator.cpp" />
+    <ClCompile Include="Client\DogCreator.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Product\CatProduct.cpp" />
+    <ClCompile Include="Product\DogProduct.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CatCreator.cpp" />
-    <ClCompile Include="CatProduct.cpp" />
-    <ClCompile Include="Creator.cpp" />
-    <ClCompile Include="DogCreator.cpp" />
-    <ClCompile Include="DogProduct.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClInclude Include="Client\Public\CatCreator.h" />
+    <ClInclude Include="Client\Public\Creator.h" />
+    <ClInclude Include="Client\Public\DogCreator.h" />
+    <ClInclude Include="Product\Public\CatProduct.h" />
+    <ClInclude Include="Product\Public\DogProduct.h" />
+    <ClInclude Include="Product\Public\Product.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -85,7 +85,9 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>.\Product\Public;.\Client\Public;$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>

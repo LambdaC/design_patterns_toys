@@ -3,9 +3,9 @@
 
 #include <iostream>
 
-IProduct* DogCreator::CreateProduct()
+std::unique_ptr<IProduct> DogCreator::CreateProduct()
 {
-    return new DogProduct{};
+    return std::make_unique<DogProduct>();
 }
 
 void DogCreator::CalledByPointer(IProduct* Product)

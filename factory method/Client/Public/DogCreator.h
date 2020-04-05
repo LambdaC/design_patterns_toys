@@ -2,9 +2,9 @@
 
 #include "Creator.h"
 
-class CatCreator :public Creator 
+class DogCreator : public Creator
 {
-    virtual IProduct* CreateProduct() override;
+    virtual std::unique_ptr<IProduct> CreateProduct() override;
     virtual void CalledByPointer(IProduct* Product) override;
     virtual void CalledByReference(IProduct& Product) override;
 };
