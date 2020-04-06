@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Product.h"
+#include "../../../Product/Public/Interface/Product.h"
 #include <memory>
 
 class Creator

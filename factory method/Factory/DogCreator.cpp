@@ -1,5 +1,5 @@
-#include "DogCreator.h"
-#include "DogProduct.h"
+#include "Public/DogCreator.h"
+#include "../Product/Public/DogProduct.h"
 
 #include <iostream>
 

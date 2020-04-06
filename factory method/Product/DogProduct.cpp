@@ -1,4 +1,4 @@
-#include "DogProduct.h"
+#include "Public/DogProduct.h"
 
 #include <iostream>
 

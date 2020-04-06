@@ -19,20 +19,20 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Client\CatCreator.cpp" />
-    <ClCompile Include="Client\Creator.cpp" />
-    <ClCompile Include="Client\DogCreator.cpp" />
+    <ClCompile Include="Factory\CatCreator.cpp" />
+    <ClCompile Include="Factory\Creator.cpp" />
+    <ClCompile Include="Factory\DogCreator.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Product\CatProduct.cpp" />
     <ClCompile Include="Product\DogProduct.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Client\Public\CatCreator.h" />
-    <ClInclude Include="Client\Public\Creator.h" />
-    <ClInclude Include="Client\Public\DogCreator.h" />
+    <ClInclude Include="Factory\Public\CatCreator.h" />
+    <ClInclude Include="Factory\Public\DogCreator.h" />
+    <ClInclude Include="Factory\Public\Interface\Creator.h" />
     <ClInclude Include="Product\Public\CatProduct.h" />
     <ClInclude Include="Product\Public\DogProduct.h" />
-    <ClInclude Include="Product\Public\Product.h" />
+    <ClInclude Include="Product\Public\Interface\Product.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -86,7 +86,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>.\Product\Public;.\Client\Public;$(IncludePath)</IncludePath>
+    <IncludePath>$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

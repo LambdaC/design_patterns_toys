@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Product.h"
+#include "Interface/Product.h"
 
 class CatProduct : public IProduct
 {

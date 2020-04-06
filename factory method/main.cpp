@@ -1,7 +1,7 @@
-#include "CatCreator.h"
-#include "DogCreator.h"
-#include "Creator.h"
-#include "Product.h"
+#include "Factory/Public/Interface/Creator.h"
+#include "Factory/Public/CatCreator.h"
+#include "Factory/Public/DogCreator.h"
+#include "Product/Public/Interface/Product.h"
 #include <iostream>
 
 std::unique_ptr<Creator> InitCreator();

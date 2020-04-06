@@ -1,5 +1,5 @@
-#include "CatCreator.h"
-#include "CatProduct.h"
+#include "Public/CatCreator.h"
+#include "../Product/Public/CatProduct.h"
 #include <iostream>
 
 std::unique_ptr<IProduct> CatCreator::CreateProduct()

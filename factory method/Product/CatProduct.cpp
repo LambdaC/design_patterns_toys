@@ -1,4 +1,4 @@
-#include "CatProduct.h"
+#include "Public/CatProduct.h"
 #include <iostream>
 
 void CatProduct::DoSomething()

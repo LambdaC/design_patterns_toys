@@ -18,10 +18,13 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Client\CatCreator.cpp">
+    <ClCompile Include="Factory\CatCreator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Client\DogCreator.cpp">
+    <ClCompile Include="Factory\Creator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Factory\DogCreator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Product\CatProduct.cpp">
@@ -30,18 +33,15 @@
     <ClCompile Include="Product\DogProduct.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Client\Creator.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Client\Public\CatCreator.h">
+    <ClInclude Include="Factory\Public\CatCreator.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Client\Public\Creator.h">
+    <ClInclude Include="Factory\Public\DogCreator.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Client\Public\DogCreator.h">
+    <ClInclude Include="Factory\Public\Interface\Creator.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Product\Public\CatProduct.h">
@@ -50,7 +50,7 @@
     <ClInclude Include="Product\Public\DogProduct.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Product\Public\Product.h">
+    <ClInclude Include="Product\Public\Interface\Product.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
