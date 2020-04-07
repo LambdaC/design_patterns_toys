@@ -14,4 +14,95 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Product\Public\ArtDecoChair.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Product\Public\ModernChair.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Product\Public\VictorianChair.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Product\Public\Interface\Chair.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Product\Public\Interface\CoffeeTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Product\Public\Interface\Sofa.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Factory\Public\ArtDecoFurnitureFactory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Factory\Public\ModernFurnitureFactory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Factory\Public\VictorianFurnitureFactory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Factory\Public\Interface\FurnitureFactory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Product\Public\ArtDecoCoffeeTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Product\Public\ArtDecoSofa.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Product\Public\ModernCoffeeTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Product\Public\ModernSofa.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Product\Public\VictorianCoffeeTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Product\Public\VictorianSofa.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Product\ArtDecoChair.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Product\ModernChair.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Product\VictorianChair.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Product\ArtDecoCoffeeTable.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Product\ArtDecoSofa.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Product\ModernCoffeeTable.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Product\ModernSofa.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Product\VictorianCoffeeTable.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Product\VictorianSofa.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Factory\ArtDecoFurnitureFactory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Factory\ModernFurnitureFactory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Factory\VictorianFurnitureFactory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

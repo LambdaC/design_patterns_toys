@@ -69,7 +69,12 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>.\Product\Public;.\Factory\Public;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>.\Product\Public;.\Factory\Public;$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -123,6 +128,37 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Factory\Public\ArtDecoFurnitureFactory.h" />
+    <ClInclude Include="Factory\Public\Interface\FurnitureFactory.h" />
+    <ClInclude Include="Factory\Public\ModernFurnitureFactory.h" />
+    <ClInclude Include="Factory\Public\VictorianFurnitureFactory.h" />
+    <ClInclude Include="Product\Public\ArtDecoChair.h" />
+    <ClInclude Include="Product\Public\ArtDecoCoffeeTable.h" />
+    <ClInclude Include="Product\Public\ArtDecoSofa.h" />
+    <ClInclude Include="Product\Public\Interface\Chair.h" />
+    <ClInclude Include="Product\Public\Interface\CoffeeTable.h" />
+    <ClInclude Include="Product\Public\Interface\Sofa.h" />
+    <ClInclude Include="Product\Public\ModernChair.h" />
+    <ClInclude Include="Product\Public\ModernCoffeeTable.h" />
+    <ClInclude Include="Product\Public\ModernSofa.h" />
+    <ClInclude Include="Product\Public\VictorianChair.h" />
+    <ClInclude Include="Product\Public\VictorianCoffeeTable.h" />
+    <ClInclude Include="Product\Public\VictorianSofa.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Factory\ArtDecoFurnitureFactory.cpp" />
+    <ClCompile Include="Factory\ModernFurnitureFactory.cpp" />
+    <ClCompile Include="Factory\VictorianFurnitureFactory.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Product\ArtDecoChair.cpp" />
+    <ClCompile Include="Product\ArtDecoCoffeeTable.cpp" />
+    <ClCompile Include="Product\ArtDecoSofa.cpp" />
+    <ClCompile Include="Product\ModernChair.cpp" />
+    <ClCompile Include="Product\ModernCoffeeTable.cpp" />
+    <ClCompile Include="Product\ModernSofa.cpp" />
+    <ClCompile Include="Product\VictorianChair.cpp" />
+    <ClCompile Include="Product\VictorianCoffeeTable.cpp" />
+    <ClCompile Include="Product\VictorianSofa.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
