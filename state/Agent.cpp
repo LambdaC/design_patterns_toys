@@ -17,3 +17,9 @@ void Agent::update()
 {
     m_state->handle();
 }
+
+Agent::~Agent()
+{
+    if (m_state != nullptr)
+        delete m_state;
+}

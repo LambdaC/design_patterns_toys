@@ -20,6 +20,8 @@ public:
     // 游戏更新，Agent已经委托状态对象来完成相关行为以及状态转换
     void update();
 
+    ~Agent();
+
 public:
     bool isSafe() { return rand() % 2 == 1; };
     bool isWeakerThanEnemy() { return rand() % 2 == 1; };
